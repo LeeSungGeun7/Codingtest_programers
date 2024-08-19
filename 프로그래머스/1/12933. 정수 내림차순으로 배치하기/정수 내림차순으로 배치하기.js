@@ -1,4 +1,3 @@
 function solution(n) {
-    let arr = parseInt(Array.from(n+"").sort((a,b)=>{ return  b - a }).join(''))
-    return arr
+    return +[...n.toString()].sort((a,b)=> b - a).join('')
 }
